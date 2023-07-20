@@ -5,10 +5,10 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: sticky; //An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed , depending on the scroll position.
     background-color: $first;
     top:0%;
-    z-index: 10;
+    z-index: 10; //this is used when we havr an overlapping ele more the z value that is placed or stacked on top
 
     >h1{
         text-transform: uppercase;
@@ -16,15 +16,16 @@ nav{
     >main{
         width: 70%;
         display: flex;
-        justify-content:flex-end;
+        justify-content:flex-end; //aligns all the content in that ele to the end
 
         >a{
             color: $dark;
             margin:1rem;
-            text-decoration: none;
+            text-decoration: none; //makes sure no effect or default style exists on it
 
             &:hover{
-                color: $third;
+                color: $third; //as we hover over this the color changes 
+                //this is a state management property
             }
         }
     }
